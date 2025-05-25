@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Page</title>
+    <link rel="icon" href="icon.ico">
+   <style>
+    /* Base Styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #1abc9c;
+}
+
+/* Add padding to the body to prevent content overlap with fixed header */
+body {
+    padding-top: 60px; /* Adjust based on the header height */
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #2980b9;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #3498db;
+    margin-bottom: 30px;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+aside {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-left: 5px solid #3498db;
+}
+
+iframe, audio, video {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Container */
+.media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+audio, video {
+    width: 90%;
+    max-width: 900px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    iframe, audio, video {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    article {
+        padding: 15px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <label class="logo">Charles Website</label>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="otherpage.html">Other</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="main-content">
+        <h1>This is me!</h1>
+        <hr>
+        
+        <section>
+            <article>
+                <p>As a motivated computer engineering student, <small>my days kick off with a symphony of keyboard clicks and the glow</small> <br> 
+                of a computer screen.<sup> 1</sup> The challenges of coding and unraveling intricate algorithms take center stage during the morning <br> 
+                hours.<sup>2</sup> <strong>Motivation becomes my guiding force as I navigate through the digital realm into the complexities of circuits</strong>.<sup>3</sup> The pursuit <br> 
+                of knowledge in the world of computer engineering fuels my determination, shaping the <br> 
+                foundation of my daily routine.<sup>4</sup></p>
+                <aside>
+                    <p>Amidst the sea of code, I carve out time for a virtual escape in the realm of online gaming.<sup>5</sup> Multiplayer battles and expansive role-playing <br>
+                    adventures offer a refreshing diversion from the analytical world of programming.<sup>6</sup> Gaming becomes a digital playground where I recharge, appreciating <br>
+                    the diverse challenges it brings and relishing the thrill of victory.<sup>7</sup></p>
+                </aside>
+                <p>Come noon, I transition from the digital landscapes to the sensory delights of the kitchen.<sup>8</sup> Cooking, for me, is both an art and a culinary escape.<sup>9</sup> <br>
+                Experimenting with recipes and perfecting cooking techniques allow me to express my creativity in a different medium.<sup>10</sup> The aroma of spices and the sizzle <br>
+                of ingredients on the pan provide a welcome break, inviting me to savor the tangible pleasures of culinary craftsmanship.<sup>11</sup>  The act of eating becomes a mindful <br>
+                pause, offering a moment to reflect and recharge before diving back into the world of algorithms and codes.<sup>12</sup>  This daily rhythm, seamlessly blending the digital <br>
+                and culinary realms, shapes my identity as a tech enthusiast with a penchant for both the virtual and the tangible.<sup>13</sup> I like to drink water</p>
+            </article>
+        </section>
+        
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/GIZiC0B6pk0?si=c8fuoS8r7N5yhgxC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+        
+        <article>
+            <aside>
+                <h2>COMPUTER ENGINEER </h2>
+            </aside>
+            <p><mark><dfn>Computer engineer</dfn></mark> <i>is a professional who specializes in the design, development, and maintenance of computer hardware and software systems.<br>
+            They possess a deep understanding of computer architecture, digital electronics, programming languages, and algorithms. Computer engineers often<br>
+            work on a wide range of projects, including designing integrated circuits, developing operating systems, creating networking systems, and optimizing <br>
+            software performance. They play a crucial role in advancing technology by innovating new computing solutions and improving existing systems to meet the <br>
+            evolving demands of various industries.</i></p>
+        </article>      
+        <h2>Memories</h2>
+        <hr>  
+
+        <div class="media-container"> 
+            <audio controls> <source src="vid and audio/binhi.mp3" type="audio/mp3"> </audio> 
+            <video width="300" height="300" controls> <source src="vid and audio/aguy.mp4" type="video/mp4"> </video> 
+        </div>
+        
+    </section>
+    
+    <footer>
+        <mark>This is me</mark>
+    </footer>
+</body>
+</html>

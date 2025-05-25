@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Attendance System Documentation</title>
+	 <link rel="icon" href="image/c.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            padding: 2em;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #4CAF50;
+        }
+        h1 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.3em;
+        }
+        .intro, .scope, .problem, .overall, .analysis, .design, .features, .security, .implementation, .software-packages, .function-declarations {
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        pre {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        /* Navigation Bar Styles */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .image-gallery { margin-top: 20px; } .image-container { display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 10px; } .image-container img { width: 150px; height: 150px; object-fit: cover; margin-bottom: 10px; border-radius: 8px; } .back-button { margin-top: 20px; text-align: center; } .back-button button { padding: 10px 20px; background-color: #333; color: #fff; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s ease; } .back-button button:hover { background-color: #555; }
+
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Attendance System Documentation</h1>
+        <div class="navbar">
+            <a class="active" href="#introduction">Introduction</a>
+            <a href="#scope">Scope and Limitation</a>
+            <a href="#problem">Problem Requirements</a>
+            <a href="#overall">Overall Description</a>
+            <a href="#analysis">Analysis</a>
+            <a href="#design">Design</a>
+            <a href="#features">Features</a>
+            <a href="#security">Security and Audit</a>
+            <a href="#implementation">Implementation</a>
+            <a href="#software-packages">Software Packages</a>
+            <a href="#function-declarations">Function Declarations</a>
+            <a href="#output">Output</a>
+        </div>
+    </header>
+    <main>
+        <section id="introduction" class="intro">
+            <h2>Introduction</h2>
+            <p>Attendance needs to be managed with speed and accuracy for any school function to be completed successfully. Keeping this in mind, we have developed our Online Attendance System with demanding features for educational institutions to build a fully-fledged attendance management system for every school activity. It includes photo compulsory verification and precise geolocation tracking. At check-in, a picture is required to be uploaded by the students and the instructors. This ensures that the attendance recorded will only be of those physically present at the event venue. Accurate attendance records are the result of this dual layer of verification, and it also improves security by minimizing fraudulent entries. Administrators and event organizers have total control over all aspects of attendance data. Furthermore, viewing, managing, and printing detailed attendance lists becomes an easy task, thereby simplifying record-keeping and report generation. This modern and user-friendly platform enables schools to efficiently manage assemblies, field trips, and extracurricular activities, ensuring reliable and readily accessible attendance records.</p>
+            <p>Now, educational institutions can embrace the future of attendance management through our innovative system that addresses the fast-changing needs of educational institutions.</p>
+        </section>
+        
+        <section id="scope" class="scope">
+            <h2>Scope and Limitation</h2>
+            <h3>Scope</h3>
+            <p>Campus Event Management is a comprehensive web application designed to facilitate the organization and management of campus events. The application is divided into two main modules:</p>
+            <ul>
+                <li><strong>UB-ADMIN:</strong> This is the primary administrative interface of the web application. Administrators have privileges to edit or delete user accounts, admin accounts, and event setups. Only verified students can be viewed. The module allows for the addition of new admin accounts.</li>
+                <li><strong>UB-EVENT:</strong> This module serves both admin and user (student) roles. Admins or school officers organizing events can post events, set desired time frames, locations, and radius limits. Admins can collect student attendance after the event is officially concluded. Students can attend events once their accounts are verified, and they must upload a picture as proof of attendance.</li>
+            </ul>
+            <h3>Limitations</h3>
+            <ul>
+                <li><strong>Facial Recognition:</strong> The web application currently lacks automatic facial recognition capabilities. As a result, users may potentially upload fake pictures as proof of attendance. Admins are unable to verify user identities due to the absence of facial recognition security.</li>
+                <li><strong>Internet Connectivity:</strong> The Campus Event Management web application requires an active internet connection to function. Users and admins without internet access cannot use the web application and must attend events physically at the designated stamping area.</li>
+            </ul>
+        </section>
+        
+        <section id="problem" class="problem">
+            <h2>Problem Requirements</h2>
+            <h3>Purpose</h3>
+            <p>Special attention deserves the definition of our Online Attendance System’s goal: to transform traditional attendance recording and control in educational institutions and the verification of students’ attendance at school activities. In the traditional tracking of attendance, several factors are experienced that include the following: the processes are demanding and are easily susceptible to fraud. Our system deals with these difficulties through a smart approach of providing an online platform that guarantees reliability, safety, and effectiveness.</p>
+            <p>This method’s combination of photo verification and geographical location tracking eliminates both the risk of fake attendance and imprecise location identification. Unlike other popular event checking applications, students and instructors must be physically present at the event location and take a real photo which is quite effective in reducing fake event check-ins. This also ensures the validity of attendance records while at the same time improving standards of safety and responsibility of occasions held in schools.</p>
+            <p>In addition, it also provides functional and effective tools to the administrator; where they can manage and monitor attendance of their subordinates and also generate report easily. The functionality for creating and generating comprehensible attendance lists is also helpful in better surveillance and easy work in general. The Online Attendance System is finally aimed at meeting schools’ operational requirements helping schools manage their events and arrange other aspects of school’s life more effectively.</p>
+        </section>
+        
+        <section id="overall" class="overall">
+            <h2>Overall Description</h2>
+            <h3>Purpose and Scope</h3>
+            <p>The Campus Event Management system is a meticulously designed web-based application aimed at simplifying the organization and participation in campus events. It streamlines administrative tasks and enhances user experience, offering a comprehensive solution for event organizers and participants.</p>
+            <h3>Audience</h3>
+            <p>The documentation targets developers, administrators, and end-users involved in campus event management within educational institutions.</p>
+            <h3>System Architecture</h3>
+            <p>The system comprises two main modules, UB-ADMIN and UB-EVENT, each catering to different user needs. UB-ADMIN serves as the administrative hub, while UB-EVENT facilitates event posting, attendance tracking, and participant interaction.</p>
+            <h3>Libraries and Backend Technologies</h3>
+            <p>The system is developed using Java as the backend technology, leveraging libraries such as Servlets, JSP (JavaServer Pages), and JDBC (Java Database Connectivity) for server-side processing and database interactions.</p>
+            <h3>Platform Compatibility</h3>
+            <p>The system is designed to run on Java EE 9 application servers, such as Apache Tomcat, and can be deployed on various operating systems, including Windows, macOS, and Linux.</p>
+            <h3>Constraints and Assumptions</h3>
+            <p>Developers should consider performance limitations based on server infrastructure and the number of concurrent users. Compatibility with older web browsers may be limited due to the use of modern web technologies.</p>
+            <h3>Security Considerations</h3>
+            <p>The system employs authentication mechanisms to ensure only verified users can access administrative features and attendance for events.</p>
+            <h3>Performance Characteristics</h3>
+            <p>The system aims to deliver fast response times and efficient resource utilization within the constraints of the Java EE environment and server specifications.</p>
+        </section>
+        
+        <section id="analysis" class="analysis">
+            <h2>Analysis</h2>
+            <h3>Input requirements</h3>
+            <ul>
+                <li><strong>Sign up:</strong> First name, Middle name, Last name, Email, Password and confirm password</li>
+                <li><strong>Login:</strong> Email, Password</li>
+                <li><strong>Forgot password:</strong> Email</li>
+                <li><strong>Change password:</strong> Verification, Email</li>
+                <li><strong>Verification:</strong> First name, Middle name, Last name, Student ID, Picture</li>
+                <li><strong>Attendance:</strong> First name, Middle name, Last name, Student ID, Picture</li>
+                <li><strong>Post event:</strong> Title, Content, Image name, Start hour, Start minute, End hour, End minute, Latitude, Longitude, Max distance</li>
+                <li><strong>List event:</strong> Title, Schedule</li>
+            </ul>
+            <h3>Output requirements</h3>
+            <ul>
+                <li><strong>Sign-Up:</strong> Confirmation message, User profile</li>
+                <li><strong>Login:</strong> User page and Admin page, Error messages</li>
+                <li><strong>Forgot Password:</strong> Password reset confirmation, Password reset link</li>
+                <li><strong>Verification:</strong> Verification status</li>
+                <li><strong>Attendance:</strong> Attendance confirmation</li>
+                <li><strong>Post Event:</strong> Event details</li>
+                <li><strong>List Event:</strong> Event listing</li>
+            </ul>
+        </section>
+        
+        <section id="design" class="design">
+            <h2>Design</h2>
+            <h3>Files and Their Descriptions</h3>
+            <p>By using JavaServer Pages (JSP), we can combine both the back-end and front-end in a single file. This approach simplifies debugging since you can easily locate errors within the JSP file. However, this may compromise code cleanliness, making it less maintainable in the long run.</p>
+            <h3>User Interface Design</h3>
+            <ul>
+                <li><code>index.jsp:</code> The default entry point for the project. For UB-ADMIN, Admins enter their passwords. For UB-EVENT, Users select whether they are a user or an admin.</li>
+                <li><code>userlogin.jsp</code> and <code>adminlogin.jsp:</code> Pages for user and admin login where email and password are input.</li>
+                <li><code>usersignup.jsp</code> and <code>adminsignup.jsp:</code> Pages for user and admin account creation. Admin accounts can only be created through the main admin interface.</li>
+                <li><code>userpage.jsp</code> and <code>adminpage.jsp:</code> Redirects users and admins to their respective homepages upon successful login.</li>
+                <li><code>useraccount.jsp</code> and <code>adminaccount.jsp:</code> Allows users and admins to view and edit their accounts. Users can verify their accounts and delete them if no longer needed. Admins have additional verification functionalities.</li>
+                <li><code>userregistration.jsp:</code> Users verify their accounts by taking a picture as proof of identity, granting access to attendance features.</li>
+                <li><code>userattendance.jsp:</code> Users mark their attendance for events they are attending.</li>
+                <li><code>adminpost.jsp:</code> Admins can post and edit events, setting the time frame, location, and radius limits.</li>
+                <li><code>listevent.jsp:</code> Admins can add a list or flow chart of the event.</li>
+                <li><code>listattendance.jsp:</code> Admins can view the students who attended the event.</li>
+                <li><code>generatepdf.jsp:</code> Exports the attendance records to a PDF.</li>
+                <li><code>sendcode.jsp:</code> Sends an authentication code to the user's Google email if they forgot their password.</li>
+                <li><code>verifycode.jsp:</code> Confirms the user's input of the correct authentication code.</li>
+                <li><code>edit(all).jsp:</code> Updates data stored in the database tables.</li>
+                <li><code>delete(all).jsp:</code> Deletes data stored in the database tables.</li>
+                <li><code>view(all).jsp:</code> Allows the main admin to view all accounts and students.</li>
+                <li><code>logout(all).jsp:</code> Logs the user out and invalidates the session.</li>
+            </ul>
+        </section>
+        
+        <section id="features" class="features">
+            <h2>Features of the Project</h2>
+            <ul>
+                <li>User and admin account management.</li>
+                <li>Event creation, editing, and posting by admins.</li>
+                <li>Attendance tracking for users.</li>
+                <li>Email authentication for password recovery.</li>
+                <li>PDF generation for attendance records.</li>
+                <li>Secure session handling.</li>
+            </ul>
+        </section>
+        
+        <section id="security" class="security">
+            <h2>Security and Audit Considerations</h2>
+            <h3>Session Handling</h3>
+            <p>Manages user sessions efficiently to ensure smooth processing. Automatically invalidates sessions to protect user information and enhance security.</p>
+        </section>
+        
+        <section id="implementation" class="implementation">
+            <h2>Implementation</h2>
+            <p><strong>URL of the saved source code</strong><br>
+            Implementing Haversine formula in the code.<br>
+            <a href="https://stackoverflow.com/questions/27928/calculate-distance-between-two-latitude-longitude-points-haversine-formula">https://stackoverflow.com/questions/27928/calculate-distance-between-two-latitude-longitude-points-haversine-formula</a></p>
+            <p><strong>Implementation of authentication code</strong><br>
+            <a href="https://stackoverflow.com/questions/21456897/mail-authentication-through-java">https://stackoverflow.com/questions/21456897/mail-authentication-through-java</a></p>
+        </section>
+        
+        <section id="software-packages" class="software-packages">
+            <h2>Software Package Files and their Descriptive Information</h2>
+            <ul>
+                <li><strong>javax.mail.jar</strong><br>
+                <strong>Description:</strong> The javax.mail.jar file is essential for all Java applications that need to establish connections for sending and receiving emails. It includes classes to support SMTP, POP3, and other email protocols and interfaces. This JAR is used to enable creation of new messages, sending and receiving of messages, including any attachments or multipart messages.<br>
+                <strong>Usage:</strong> Widely used for integrating email functionality into Java applications for tasks such as creating and initializing email messages, communicating with mail servers for notification and report sending, and other automated mass mailing.</li>
+                <li><strong>javax.mail-api.jar</strong><br>
+                <strong>Description:</strong> The javax.mail-api.jar consists of interfaces and abstract classes of the JavaMail API without implementation. It sets the standards on how email services should operate, while permitting freedom in selection, analogous to an operating system.<br>
+                <strong>Usage:</strong> It is used during build processes to compile JavaMail API code, with the actual implementation being provided at runtime through application servers or during dependency management.</li>
+                <li><strong>javax.activation.jar</strong><br>
+                <strong>Description:</strong> The javax.activation.jar is a Java archive file that is integrated into the JavaBeans Activation Framework. This JAR is necessary for dealing with file attachments in email messages, as it includes functions for encoding and decoding various data types used in multimedia contents in JavaMail.<br>
+                <strong>Usage:</strong> Used specifically for handling email attachments and encoding/decoding various data types in JavaMail, ensuring compatibility and proper functionality of multimedia contents.</li>
+                <li><strong>iText.jar</strong><br>
+                <strong>Description:</strong> The iText.jar file belongs to the iText library, which enables developers to create and manipulate PDF documents via Java. It facilitates the creation of dynamic PDFs, editing PDFs, extracting information from PDFs, and securing PDF documents with encryption and digital signatures.<br>
+                <strong>Usage:</strong> Often used in Java-based applications for creating reports, invoices, legal documents, and other types of documents that require PDF format. It provides extensive functionalities for PDF document manipulation and generation.</li>
+                <li><strong>mysql-connector-java.jar</strong><br>
+                <strong>Description:</strong> The mysql-connector-java.jar is the JDBC driver for MySQL databases. This JAR enables Java applications to establish and manage connections to MySQL databases, execute SQL queries, and handle transactions effectively.<br>
+                <strong>Usage:</strong> Essential for establishing connections with MySQL databases, performing database operations, and managing transactions in Java applications that interact with MySQL databases.</li>
+                <li><strong>json.jar</strong><br>
+                <strong>Description:</strong> The json.jar contains classes and packages for working with JSON data within a Java application. JSON (JavaScript Object Notation) is a lightweight data interchange format that simplifies data processing and manipulation in various contexts.<br>
+                <strong>Usage:</strong> Used in Java applications where manipulation and processing of JSON data is required, such as web services, RESTful APIs, and other applications that handle JSON data formats.</li>
+            </ul>
+        </section>
+        
+        <section id="function-declarations" class="function-declarations">
+            <h2>Function Declarations and their Descriptive Purposes</h2>
+            <ol>
+                <li><strong>Authenticate User Login</strong><br>
+                <strong>Purpose:</strong> To verify the user's identity and grant access to the system based on their role (e.g., student, teacher, administrator). Ensures that only authorized users can access specific functionalities or information within the system.</li>
+                <li><strong>Capture and Upload Photo</strong><br>
+                <strong>Purpose:</strong> Allows participants to capture a real-time photo during the check-in process at events. The uploaded photo serves as proof of attendance, ensuring the authenticity of attendance records.</li>
+                <li><strong>Verify Geolocation</strong><br>
+                <strong>Purpose:</strong> Validates the participant's presence at the event venue by comparing their current location with the event coordinates. Ensures accurate and legitimate attendance tracking based on physical presence at the designated location.</li>
+                <li><strong>Generate Attendance Reports</strong><br>
+                <strong>Purpose:</strong> Transforms attendance data into comprehensible and manageable reports that administrators can view, download, or print. Facilitates tracking and analysis of participation trends, and serves documentation, accountability, and administrative audit purposes.</li>
+                <li><strong>Forgot Password with Google Authentication Code</strong><br>
+                <strong>Purpose:</strong> Enables users to securely reset their passwords by requesting a verification code from Google's authentication application. Users must enter this code to proceed with the password reset process, enhancing security and protecting accounts during password recovery.</li>
+                <li><strong>Student Verification</strong><br>
+                <strong>Purpose:</strong> Utilizes the list of registered students to verify their identity during registration or check-in processes. Ensures that only legitimate students are allowed to register for events and have their attendance recorded, minimizing fraudulent attendance attempts.</li>
+                <li><strong>Create Admin Accounts</strong><br>
+                <strong>Purpose:</strong> Allows the main administrator or site creator to create additional administrator accounts. Essential for delegating management responsibilities and ensuring multiple trusted personnel can oversee system operations and attendance records.</li>
+            </ol>
+        </section>
+        
+        <section id="references" class="references">
+            <h2>System References</h2>
+            <ul>
+                <li><strong>UB-ADMIN and UB-EVENT system reference</strong></li>
+                <li><strong>Posts event was inspired by Google classroom.</strong></li>
+                <li><strong>List event flowchart was inspired by the UB Days flowchart.</strong></li>
+                <li><strong>Admin or User selection was referenced in Codechum website.</strong></li>
+            </ul>
+        </section>
+    </div>
+    
+    <section id="image-gallery" class="image-gallery"> <h3>Image Gallery</h3> <div class="image-container"> <img src="path/to/image1.jpg" alt="Image 1"> <img src="path/to/image2.jpg" alt="Image 2"> <img src="path/to/image3.jpg" alt="Image 3"> <img src="path/to/image4.jpg" alt="Image 4"> <img src="path/to/image5.jpg" alt="Image 5"> <img src="path/to/image6.jpg" alt="Image 6"> <img src="path/to/image7.jpg" alt="Image 7"> <img src="path/to/image8.jpg" alt="Image 8"> </div> </section> <!-- Back Button Section --> <div class="back-button"> <button onclick="goBack()">Back</button> </div> </div> <!-- Script for Back Button --> <script> function goBack() { window.history.back(); } </script>
+
+    <footer>
+        <p>&copy; 2024 Campus Event Management. All rights reserved.</p>
+    </footer>
+</body>
+</html>
