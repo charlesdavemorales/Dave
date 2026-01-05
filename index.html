@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Charles Dave Morales</title>
+  <title>Charles Dave Morales - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="image/c.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -12,89 +12,245 @@
 
   <header>
     <div class="container">
-      <h1>Charles Dave Morales</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="header-content">
+        <h1 class="logo">Charles Dave Morales</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
   <section class="hero">
-    <img src="image/charles.jpg" alt="Charles' Photo" />
-    <h2>Hello, I’m Charles!</h2>
-    <p>Welcome to my portfolio website.</p>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="image/charles.jpg" alt="Charles' Photo" />
+      <h2 class="hero-title">Hello, I'm Charles!</h2>
+      <p class="hero-subtitle">Computer Engineering Student & Developer</p>
+      <p class="hero-description">Passionate about technology, innovation, and building solutions that make a difference.</p>
+      <a href="#projects" class="cta-button">View My Work</a>
+    </div>
   </section>
 
   <section id="about">
     <div class="container">
-      <h2>About Me</h2>
-      <p>I am a passionate developer currently studying programming and web development. I love building modern web applications and exploring new technologies.</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>I am a passionate Computer Engineering student with a strong foundation in programming, web development, and embedded systems. Throughout my academic journey, I've developed various projects ranging from robotics to sophisticated software systems.</p>
+        <p>My experience spans across multiple programming languages and technologies, enabling me to tackle diverse challenges in both hardware and software domains. I'm constantly learning and pushing the boundaries of what's possible.</p>
+      </div>
     </div>
   </section>
 
   <section id="projects">
     <div class="container">
-      <h2>Projects</h2>
+      <h2 class="section-title">Projects</h2>
 
-      <h3>First Year</h3>
-      <div class="project-gallery">
-        <div class="project-item">
-          <a href="aboutme.html">
-            <img src="image/web.png" alt="Website Project">
-          </a>
-          <p><strong>Website</strong><br>My first personal website built during my first year.</p>
-        </div>
-
-        <div class="project-item">
-          <a href="description.html">
-            <img src="image/sumobot.jpg" alt="Sumobot Description">
-          </a>
-          <p><strong>Sumobot</strong><br>Autonomous robot created during my first year.</p>
-        </div>
-
-        <div class="project-item">
-          <a href="landuse.html">
-            <img src="image/landuse.jpg" alt="Landuse Inventory">
-          </a>
-          <p><strong>Landuse Inventory</strong><br>Inventory and mapping project during my first year.</p>
-        </div>
-		
-		<div class="project-item">
-          <a href="attendance.html">
-            <img src="image/attendance.jpg" alt="Online Attendance">
-          </a>
-          <p><strong>Online Attendance</strong><br>Attendance monitoring system built during my second year.</p>
+      <!-- Added special project section for university attendance system -->
+      <div class="special-project-section">
+        <h3 class="year-title special-year"><i class="fas fa-star"></i> Special Project</h3>
+        <div class="special-project-card">
+          <div class="special-project-badge">
+            <i class="fas fa-trophy"></i> Live in Production
+          </div>
+          <div class="special-project-image">
+            <a href="attendance-special.html">
+              <img src="image/attendance-special.png" alt="University Attendance System">
+            </a>
+          </div>
+          <div class="special-project-details">
+            <h4>University Attendance Management System</h4>
+            <p class="project-description">A production-grade attendance tracking system currently deployed and actively used at the university. Features photo verification, GPS tracking, real-time monitoring, and automated reporting. Serving hundreds of students and faculty members for campus-wide events.</p>
+            <div class="project-tags">
+              <span class="tag">Java EE</span>
+              <span class="tag">Production System</span>
+              <span class="tag">Real-time</span>
+              <span class="tag">Geolocation</span>
+            </div>
+            <a href="attendance-special.html" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
       </div>
 
-      <h3>Second Year</h3>
+      <h3 class="year-title">First Year</h3>
       <div class="project-gallery">
-        <div class="project-item">
+        <div class="project-card">
+          <a href="aboutme.html">
+            <div class="project-image">
+              <img src="image/web.png" alt="Website Project">
+              <div class="project-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+            </div>
+          </a>
+          <div class="project-info">
+            <h4>Personal Website</h4>
+            <p>My first personal website built during my first year, showcasing HTML, CSS, and JavaScript fundamentals.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <a href="description.html">
+            <div class="project-image">
+              <img src="image/sumobot.jpg" alt="Sumobot Description">
+              <div class="project-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+            </div>
+          </a>
+          <div class="project-info">
+            <h4>Sumobot</h4>
+            <p>Autonomous robot created during my first year, featuring sensor integration and competitive programming.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <a href="landuse.html">
+            <div class="project-image">
+              <img src="image/landuse.jpg" alt="Landuse Inventory">
+              <div class="project-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+            </div>
+          </a>
+          <div class="project-info">
+            <h4>Landuse Inventory</h4>
+            <p>Comprehensive inventory and mapping project demonstrating data management and visualization skills.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="year-title">Second Year</h3>
+      <div class="project-gallery">
+        <!-- Added attendance system to second year projects -->
+        <div class="project-card">
+          <a href="attendance-second-year.html">
+            <div class="project-image">
+              <img src="image/attendance.jpg" alt="Attendance System">
+              <div class="project-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+            </div>
+          </a>
+          <div class="project-info">
+            <h4>Attendance System</h4>
+            <p>Web-based attendance tracking system for managing student attendance records efficiently.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
           <a href="https://youtube.com/shorts/qnB32u1XUOA?si=u5kzBTAju15GPuVO" target="_blank">
-            <img src="image/sumobot.jpg" alt="Sumobot Video">
+            <div class="project-image">
+              <img src="image/sumobot.jpg" alt="Sumobot Video">
+              <div class="project-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+            </div>
           </a>
-          <p><strong>Sumobot/Hockey</strong><br>Demonstration video of the sumobot in action.</p>
+          <div class="project-info">
+            <h4>Sumobot/Hockey Demo</h4>
+            <p>Live demonstration video showcasing the sumobot's autonomous capabilities in competitive scenarios.</p>
+          </div>
         </div>
 
-        
-
-        <div class="project-item">
+        <div class="project-card">
           <a href="https://youtu.be/gi_awYyYYos?si=tkKlvcQan-c98lNj" target="_blank">
-            <img src="image/numericals.png" alt="Numerical Methods MATLAB">
+            <div class="project-image">
+              <img src="image/numericals.png" alt="Numerical Methods MATLAB">
+              <div class="project-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+            </div>
           </a>
-          <p><strong>Numerical Methods (MATLAB)</strong><br>MATLAB version of my numerical methods root-finding application.</p>
+          <div class="project-info">
+            <h4>Numerical Methods (MATLAB)</h4>
+            <p>MATLAB implementation of advanced root-finding algorithms with visualization and analysis tools.</p>
+          </div>
         </div>
 
-        <div class="project-item">
+        <div class="project-card">
           <a href="https://youtu.be/Gc6WZ-mU1jk?si=ut3_7An2txxJSHBK" target="_blank">
-            <img src="image/numericals.png" alt="Numerical Methods Python">
+            <div class="project-image">
+              <img src="image/numericals.png" alt="Numerical Methods Python">
+              <div class="project-overlay">
+                <i class="fab fa-youtube"></i>
+              </div>
+            </div>
           </a>
-          <p><strong>Numerical Methods (Python)</strong><br>Python version with GUI for root-finding techniques.</p>
+          <div class="project-info">
+            <h4>Numerical Methods (Python)</h4>
+            <p>Python version with intuitive GUI for implementing various numerical root-finding techniques.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Added third year projects section -->
+      <h3 class="year-title">Third Year</h3>
+      <div class="project-gallery">
+        <div class="project-card">
+          <a href="ic-project.html">
+            <div class="project-image">
+              <img src="image/ic.jpg" alt="IC Letter Showing">
+              <div class="project-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+            </div>
+          </a>
+          <div class="project-info">
+            <h4>Letter Display System (IC)</h4>
+            <p>Digital letter display system using integrated circuits and logic gates for character representation.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <a href="cpu-scheduling.html">
+            <div class="project-image">
+              <img src="image/cpu-scheduling.png" alt="CPU Scheduling">
+              <div class="project-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+            </div>
+          </a>
+          <div class="project-info">
+            <h4>Preemptive CPU Scheduling Simulator</h4>
+            <p>Interactive simulator implementing preemptive CPU scheduling algorithms with performance analysis.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <a href="locker-system.html">
+            <div class="project-image">
+              <img src="image/locker.jpg" alt="Locker System">
+              <div class="project-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+            </div>
+          </a>
+          <div class="project-info">
+            <h4>Smart Locker System</h4>
+            <p>Electronic locker system with secure access control, password protection, and activity logging.</p>
+          </div>
+        </div>
+
+        <!-- Added carpark system project -->
+        <div class="project-card">
+          <a href="carpark-system.html">
+            <div class="project-image">
+              <img src="image/carpark.png" alt="Smart Carpark System">
+              <div class="project-overlay">
+                <i class="fas fa-eye"></i>
+              </div>
+            </div>
+          </a>
+          <div class="project-info">
+            <h4>Smart Carpark Management System</h4>
+            <p>Real-time carpark monitoring system with online slot availability and location tracking using ESP32 IoT sensors.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -102,29 +258,80 @@
 
   <section id="skills">
     <div class="container">
-      <h2>Skills</h2>
-      <p>HTML, CSS, JavaScript, Python, Java, C++, PHP</p>
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <i class="fas fa-code"></i>
+          <h4>Programming Languages</h4>
+          <p>Python, Java, C++, JavaScript, MATLAB, PHP</p>
+        </div>
+        <div class="skill-category">
+          <i class="fas fa-laptop-code"></i>
+          <h4>Web Development</h4>
+          <p>HTML5, CSS3, JavaScript, Responsive Design</p>
+        </div>
+        <div class="skill-category">
+          <i class="fas fa-microchip"></i>
+          <h4>Embedded Systems</h4>
+          <p>Arduino, Sensors, Robotics, Circuit Design</p>
+        </div>
+        <div class="skill-category">
+          <i class="fas fa-database"></i>
+          <h4>Database & Tools</h4>
+          <p>SQL, Version Control, Algorithm Design</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="contact">
     <div class="container">
-      <h2>Contact Me</h2>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">Have a project in mind or want to collaborate? Feel free to reach out!</p>
+      <!-- Updated contact methods to display Gmail, Facebook, and Instagram with logos -->
+      <div class="contact-methods">
+        <a href="mailto:charlesdavemorales04@gmail.com" class="social-contact-link gmail">
+          <i class="fab fa-google"></i>
+          <span>Gmail</span>
+        </a>
+        <a href="https://www.facebook.com/share/153rtxc1iN/" target="_blank" class="social-contact-link facebook">
+          <i class="fab fa-facebook"></i>
+          <span>Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/charlesdavemorales?igsh=bXFjcTlrbGlycGU1" target="_blank" class="social-contact-link instagram">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </div>
       <form id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required />
-        <input type="email" id="email" placeholder="Your Email" required />
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">
+          Send Message <i class="fas fa-paper-plane"></i>
+        </button>
       </form>
       <p id="formResponse"></p>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Charles Dave Morales. All rights reserved.</p>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/share/153rtxc1iN/" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/charlesdavemorales?igsh=bXFjcTlrbGlycGU1" target="_blank"><i class="fab fa-instagram"></i></a>
+    <div class="container">
+      <p>&copy; 2025 Charles Dave Morales. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/153rtxc1iN/" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/charlesdavemorales?igsh=bXFjcTlrbGlycGU1" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
     </div>
   </footer>
 

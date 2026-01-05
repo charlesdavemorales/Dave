@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GPS Attendance System - Second Year Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="image/c.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <h1 class="logo">GPS Attendance System</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Back to Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="project-detail-hero">
+    <div class="container">
+      <!-- Updated title to reflect GPS-based system -->
+      <h2>GPS Attendance System</h2>
+      <p class="project-subtitle">Second Year Project - Location-Based Attendance Tracker</p>
+    </div>
+  </section>
+
+  <section class="project-detail-content">
+    <div class="container">
+      <div class="detail-grid">
+        <div class="detail-image">
+          <img src="image/attendance.jpg" alt="GPS Attendance System">
+        </div>
+        <div class="detail-info">
+          <!-- Updated overview to emphasize GPS tracking -->
+          <h3>Project Overview</h3>
+          <p>A GPS-based attendance tracking system developed during my second year that uses geolocation technology to verify student presence at specific locations. This system ensures accurate attendance by validating that students are physically present at the designated venue.</p>
+          
+          <h3>Key Features</h3>
+          <ul class="feature-list">
+            <!-- Updated features to focus on GPS functionality -->
+            <li><i class="fas fa-check-circle"></i> GPS location tracking and verification</li>
+            <li><i class="fas fa-check-circle"></i> Geofencing with radius validation</li>
+            <li><i class="fas fa-check-circle"></i> Real-time location detection</li>
+            <li><i class="fas fa-check-circle"></i> Student database management</li>
+            <li><i class="fas fa-check-circle"></i> Attendance history with location data</li>
+            <li><i class="fas fa-check-circle"></i> User authentication system</li>
+          </ul>
+
+          <h3>Technologies Used</h3>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">Java EE 9</span>
+            <span class="tech-tag">JSP</span>
+            <span class="tech-tag">Servlets</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Apache Tomcat</span>
+            <span class="tech-tag">GPS API</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="description-section">
+        <!-- Rewritten content to focus on GPS tracking capabilities -->
+        <h3>Project Purpose</h3>
+        <p>This GPS-based attendance system was created to address the issue of proxy attendance and ensure that students are physically present at the event or class location. By leveraging geolocation technology, the system verifies that check-ins occur only within a specified radius of the venue, providing authentic attendance records.</p>
+        
+        <h3>How GPS Tracking Works</h3>
+        <ul class="feature-list">
+          <li><i class="fas fa-map-marker-alt"></i> System captures student's current GPS coordinates when marking attendance</li>
+          <li><i class="fas fa-compass"></i> Compares location against predefined event/class coordinates</li>
+          <li><i class="fas fa-ruler"></i> Calculates distance using geographical distance formula</li>
+          <li><i class="fas fa-check"></i> Allows attendance only if student is within specified radius (e.g., 100 meters)</li>
+          <li><i class="fas fa-times-circle"></i> Prevents attendance marking from outside the designated area</li>
+        </ul>
+
+        <h3>Core Functionality</h3>
+        <h4>For Teachers/Administrators</h4>
+        <ul class="feature-list">
+          <li><i class="fas fa-map-pin"></i> Set venue coordinates for events or classes</li>
+          <li><i class="fas fa-sliders-h"></i> Configure geofence radius for location validation</li>
+          <li><i class="fas fa-eye"></i> Monitor real-time attendance with location data</li>
+          <li><i class="fas fa-list"></i> View attendance records with GPS coordinates</li>
+          <li><i class="fas fa-file-alt"></i> Generate location-verified attendance reports</li>
+        </ul>
+
+        <h4>For Students</h4>
+        <ul class="feature-list">
+          <li><i class="fas fa-mobile-alt"></i> Mark attendance from mobile devices with GPS enabled</li>
+          <li><i class="fas fa-location-arrow"></i> System automatically detects current location</li>
+          <li><i class="fas fa-check-circle"></i> Receive confirmation when successfully checked in</li>
+          <li><i class="fas fa-exclamation-triangle"></i> Get alerts if outside the allowed radius</li>
+          <li><i class="fas fa-history"></i> View personal attendance history with timestamps</li>
+        </ul>
+
+        <h3>Technical Implementation</h3>
+        <!-- Updated to reflect Java EE architecture -->
+        <p>The system uses the browser's Geolocation API to capture the user's current GPS coordinates. When a student attempts to mark attendance, JavaScript retrieves their latitude and longitude, then sends this data to the Java Servlets backend. The server calculates the distance between the student's location and the venue using the Haversine formula, which accounts for the Earth's curvature. If the calculated distance is within the allowed radius, the attendance is recorded in the MySQL database along with the GPS coordinates and timestamp. The application runs on Apache Tomcat and uses JSP for dynamic page rendering.</p>
+
+        <h3>Security Features</h3>
+        <ul class="feature-list">
+          <li><i class="fas fa-shield-alt"></i> GPS spoofing detection mechanisms</li>
+          <li><i class="fas fa-lock"></i> Secure user authentication and session management</li>
+          <li><i class="fas fa-clock"></i> Time-based validation to prevent backdated entries</li>
+          <li><i class="fas fa-database"></i> Encrypted storage of location data</li>
+        </ul>
+
+        <h3>Learning Outcomes</h3>
+        <p>This project provided hands-on experience with geolocation technologies, spatial calculations, and location-based services. I learned how to work with GPS APIs, implement distance calculation algorithms, handle location permissions, and create mobile-responsive interfaces for location-based applications.</p>
+
+        <h3>Challenges and Solutions</h3>
+        <ul class="feature-list">
+          <li><i class="fas fa-signal"></i> <strong>GPS Accuracy:</strong> Implemented averaging of multiple readings to improve accuracy</li>
+          <li><i class="fas fa-battery-half"></i> <strong>Battery Consumption:</strong> Optimized to request location only when needed</li>
+          <li><i class="fas fa-user-lock"></i> <strong>Privacy Concerns:</strong> Store only necessary location data with user consent</li>
+        </ul>
+
+        <h3>Future Improvements</h3>
+        <ul class="feature-list">
+          <li><i class="fas fa-wifi"></i> Add offline capability with location caching</li>
+          <li><i class="fas fa-map"></i> Visual map display showing venue and student locations</li>
+          <li><i class="fas fa-chart-line"></i> Analytics dashboard for attendance patterns</li>
+          <li><i class="fas fa-bell"></i> Push notifications when entering venue radius</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Charles Dave Morales. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/153rtxc1iN/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/charlesdavemorales?igsh=bXFjcTlybGlycGU1" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

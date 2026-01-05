@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Locker System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="image/c.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <h1 class="logo">Smart Locker System</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Back to Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="project-detail-hero">
+    <div class="container">
+      <h2>Electronic Locker System with Secure Access Control</h2>
+      <p class="project-subtitle">Third Year Project - Embedded Systems</p>
+    </div>
+  </section>
+
+  <section class="project-detail-content">
+    <div class="container">
+      <div class="detail-grid">
+        <div class="detail-image">
+          <img src="image/locker.jpg" alt="Smart Locker System">
+        </div>
+        <div class="detail-info">
+          <h3>Project Overview</h3>
+          <p>A microcontroller-based electronic locker system featuring secure password authentication, user management, and activity logging. The system provides a reliable and secure solution for personal storage access control.</p>
+          
+          <h3>Key Features</h3>
+          <ul class="feature-list">
+            <li><i class="fas fa-check-circle"></i> Keypad-based password entry</li>
+            <li><i class="fas fa-check-circle"></i> LCD display for user feedback</li>
+            <li><i class="fas fa-check-circle"></i> Electronic lock mechanism control</li>
+            <li><i class="fas fa-check-circle"></i> Master password override</li>
+            <li><i class="fas fa-check-circle"></i> Failed attempt tracking</li>
+            <li><i class="fas fa-check-circle"></i> Visual and audio feedback</li>
+          </ul>
+
+          <h3>Technologies Used</h3>
+          <div class="tech-tags">
+            <span class="tech-tag">Arduino</span>
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">Embedded Systems</span>
+            <span class="tech-tag">Security</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="description-section">
+        <h3>System Architecture</h3>
+        <p>The locker system is built around an Arduino microcontroller that interfaces with a 4x4 matrix keypad for password input, a 16x2 LCD for user interface, and a servo motor or solenoid lock for physical access control. The system includes LED indicators and a buzzer for visual and audio feedback.</p>
+        <p>Password data is stored securely in EEPROM memory, allowing persistence across power cycles. The system implements a timeout mechanism for failed login attempts and provides administrative functions for password reset and system configuration.</p>
+        
+        <h3>Security Features</h3>
+        <ul class="feature-list">
+          <li><i class="fas fa-shield-alt"></i> Encrypted password storage</li>
+          <li><i class="fas fa-shield-alt"></i> Lockout after multiple failed attempts</li>
+          <li><i class="fas fa-shield-alt"></i> Master key access for emergencies</li>
+          <li><i class="fas fa-shield-alt"></i> Activity logging with timestamps</li>
+        </ul>
+
+        <h3>Learning Outcomes</h3>
+        <p>This project provided hands-on experience with embedded systems development, real-time programming, and hardware interfacing. It enhanced my understanding of security implementations in embedded applications and taught me about user experience design in resource-constrained environments.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Charles Dave Morales. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/153rtxc1iN/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/charlesdavemorales?igsh=bXFjcTlrbGlycGU1" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
